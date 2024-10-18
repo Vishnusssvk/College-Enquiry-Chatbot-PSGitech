@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login & Sign Up - PSG Institute of Technology and Applied Research</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .background-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://psgitech.ac.in/uploads/main_website/image_slider/2024/13.jpg');
+            background-size: cover;
+            background-position: center;
+            filter: blur(10px);
+            z-index: -1;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            width: 400px;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .container h1 {
+            margin-bottom: 20px;
+            color: red;
+            font-size: 1.5em;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-size: larger;   
+        }
+
+        .form-group input {
+            width: 100%;
+            height: 25px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #e8ed5ad3;
+            border: none;
+            color: rgb(9, 6, 6);
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            color:white;
+        }
+
+        .toggle-link {
+            margin-top: 15px;
+            color: #f60606;
+            cursor: pointer;
+        }
+
+        .toggle-link:hover {
+            color: rgb(181, 0, 253);
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .success {
+            color: green;
+            font-size: 1em;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-container"></div>
+
+    <div class="container">
+        <h1>PSG Institute of Technology and Applied Research</h1>
+
+        <div id="login-form">
+            <form onsubmit="return login(event)">
+                <div class="form-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit">Login</button>
+                <p class="toggle-link" onclick="toggleForms()">Don't have an account? Sign Up</p>
+                <p id="login-error" class="error"></p>
+            </form>
+        </div>
+
+        <div id="signup-form" style="display:none;">
+            <form onsubmit="return signup(event)">
+                <div class="form-group">
+                    <label for="signup-name">Full Name:</label>
+                    <input type="text" id="signup-name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm-password">Confirm Password:</label>
+                    <input type="password" id="signup-confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+                <p class="toggle-link" onclick="toggleForms()">Already have an account? Login</p>
+                <p id="signup-error" class="error"></p>
+                <p id="signup-success" class="success"></p>
+            </form>
+        </div>
+    </div>
+
+<script>
+    function toggleForms() {
+        const loginForm = document.getElementById('login-form');
+        const signupForm = document.getElementById('signup-form');
+        loginForm.style.display = loginForm.style.display === 'none' ? 'block' : 'none';
+        signupForm.style.display = signupForm.style.display === 'none' ? 'block' : 'none';
+        document.getElementById('login-error').innerText = '';
+        document.getElementById('signup-error').innerText = '';
+        document.getElementById('signup-success').innerText = '';
+    }
+
+    function login(event) {
+        event.preventDefault();
+        const email = document.getElementById('login-email').value.trim();
+        const password = document.getElementById('login-password').value;
+        const errorElem = document.getElementById('login-error');
+
+        if (!email || !password) {
+            errorElem.innerText = 'Please fill in all fields.';
+            return false;
+        }
+
+        fetch('auth.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams({
+                action: 'login',
+                email: email,
+                password: password,
+            }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                window.location.href = "index.html";  
+            } else {
+                errorElem.innerText = data.message;
+            }
+        })
+        .catch(error => {
+            errorElem.innerText = 'An error occurred during login.';
+        });
+    }
+
+    function signup(event) {
+        event.preventDefault();
+        const fullName = document.getElementById('signup-name').value.trim();
+        const email = document.getElementById('signup-email').value.trim();
+        const password = document.getElementById('signup-password').value;
+        const confirmPassword = document.getElementById('signup-confirm-password').value;
+        const errorElem = document.getElementById('signup-error');
+        const successElem = document.getElementById('signup-success');
+
+        if (!fullName || !email || !password || !confirmPassword) {
+            errorElem.innerText = 'Please fill in all fields.';
+            return false;
+        }
+
+        if (password !== confirmPassword) {
+            errorElem.innerText = 'Passwords do not match.';
+            return false;
+        }
+
+        fetch('auth.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams({
+                action: 'signup',
+                fullname: fullName,
+                email: email,
+                password: password,
+            }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                successElem.innerText = 'Registration successful! Redirecting to login...';
+                setTimeout(() => {
+                    toggleForms();
+                }, 2000);
+            } else {
+                errorElem.innerText = data.message;
+            }
+        })
+        .catch(error => {
+            errorElem.innerText = 'An error occurred during signup.';
+        });
+    }
+</script>
+
+</body>
+</html>

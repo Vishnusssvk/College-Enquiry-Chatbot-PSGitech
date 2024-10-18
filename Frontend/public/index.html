@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PSG Institute of Technology and Applied Research Chatbot</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          position: relative;
+      }
+      .header {
+          display: flex;
+          justify-content: center; 
+          align-items: center;
+          padding: 2px;
+          background-color: #f8f8f8;
+      }
+      .logo {
+          height: 50px; 
+          margin-right: 10px; 
+      }
+      .logout-button {
+          position: absolute; 
+          top: 10px; 
+          right: 20px; 
+          border: none;
+          background-color: #e74c3c; 
+          color: white;
+          padding: 10px 15px;
+          cursor: pointer;
+          border-radius: 5px;
+      }
+      .logout-button:hover {
+          background-color: #c0392b; 
+      }
+      .chat-container {
+          margin-top: 60px; 
+      }
+      .chat-window {
+          height: 400px;
+          border: 1px solid #ccc;
+          padding: 10px;
+          overflow-y: auto;
+      }
+      .input-container {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px;
+      }
+      .input-container input {
+          flex: 1;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+      .input-container button {
+          margin-left: 10px;
+          cursor: pointer;
+      }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="itech.png" alt="PSGiTECH Logo" class="logo">
+    <h1>PSG Institute of Technology and Applied Research</h1>
+  </div>
+  <button class="logout-button" onclick="logout()">Logout</button>
+
+  <div class="chat-container">
+    <div id="chat-window" class="chat-window"></div>
+
+    <div class="input-container">
+      <input type="text" id="chat-input" placeholder="Type your message...">
+      <button id="mic-button">🎤</button>
+    </div>
+  </div>
+
+  <div class="background-image"></div>
+
+  <script>
+    function logout() {
+
+        window.location.href = "login.html"; 
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+version: "3.0"
+
+stories:
+  - story: greet and ask for help
+    steps:
+      - intent: greet
+      - action: utter_welcome
+
+  - story: say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: inquire about the institute
+    steps:
+      - intent: inquire_institute_info
+      - action: utter_institute_info
+
+  - story: inquire about the vision
+    steps:
+      - intent: inquire_vision
+      - action: utter_vision_info
+
+  - story: inquire about the mission
+    steps:
+      - intent: inquire_mission
+      - action: utter_mission_info
+
+  - story: inquire about the trustee
+    steps:
+      - intent: inquire_trustee
+      - action: utter_trustee_info
+
+  - story: inquire about the secretary
+    steps:
+      - intent: inquire_secretary
+      - action: utter_secretary_info
+
+  - story: inquire about the principal
+    steps:
+      - intent: inquire_principal
+      - action: utter_principal_info
+
+  - story: inquire about the deans
+    steps:
+      - intent: inquire_deans
+      - action: utter_deans_info
+
+  - story: inquire about the heads of departments
+    steps:
+      - intent: inquire_hods
+      - action: utter_hods_info
+
+  - story: inquire about committees
+    steps:
+      - intent: inquire_committees
+      - action: utter_committees_info
+
+  - story: inquire about programmes
+    steps:
+      - intent: inquire_programmes
+      - action: utter_programmes_info
+
+  - story: inquire about exam cell
+    steps:
+      - intent: inquire_examcell
+      - action: utter_examcell_info
+
+  - story: inquire about regulation
+    steps:
+      - intent: inquire_regulation
+      - action: utter_regulation_info
+
+  - story: inquire about timetable
+    steps:
+      - intent: inquire_timetable
+      - action: utter_timetable_info
+
+  - story: inquire about calendar
+    steps:
+      - intent: inquire_calendar
+      - action: utter_calendar_info
+  
+  - story: inquire about facilities
+    steps:
+      - intent: inquire_facilities
+      - action: utter_facilities_info
+
+  - story: respond_to_library_query
+    steps:
+      - intent: ask_facility_library
+      - action: utter_facility_library
+
+  - story: respond_to_hostel_query
+    steps:
+      - intent: ask_facility_hostel
+      - action: utter_facility_hostel
+
+  - story: respond_to_wifi_query
+    steps:
+      - intent: ask_facility_wifi
+      - action: utter_facility_wifi
+
+  - story: respond_to_sports_query
+    steps:
+      - intent: ask_facility_sports
+      - action: utter_facility_sports
+
+  - story: respond_to_transport_query
+    steps:
+      - intent: ask_facility_transport
+      - action: utter_facility_transport
+
+  - story: respond_to_auditorium_query
+    steps:
+      - intent: ask_facility_auditorium
+      - action: utter_facility_auditorium
+
+  - story: respond_to_cafeteria_query
+    steps:
+      - intent: ask_facility_cafeteria
+      - action: utter_facility_cafeteria
+
+  - story: respond_to_laboratories_query
+    steps:
+      - intent: ask_facility_laboratories
+      - action: utter_facility_laboratories
+
+  - story: inquire about hostel
+    steps:
+      - intent: inquire_hostel
+      - action: utter_hostel_info
+  
+  - story: boys_hostel_story
+    steps:
+      - intent: ask_boys_hostel
+      - action: utter_boys_hostel
+
+  - story: girls_hostel_story
+    steps:
+      - intent: ask_girls_hostel
+      - action: utter_girls_hostel
+
+  - story: room_types_story
+    steps:
+      - intent: ask_room_types
+      - action: utter_room_types
+
+  - story: wifi_facility_story
+    steps:
+      - intent: ask_wifi_facility
+      - action: utter_wifi_facility
+
+  - story: dining_facilities_story
+    steps:
+      - intent: ask_dining_facilities
+      - action: utter_dining_facilities
+
+  - story: recreation_study_areas_story
+    steps:
+      - intent: ask_recreation_study_areas
+      - action: utter_recreation_study_areas
+
+  - story: laundry_service_story
+    steps:
+      - intent: ask_laundry_service
+      - action: utter_laundry_service
+
+  - story: medical_care_story
+    steps:
+      - intent: ask_medical_care
+      - action: utter_medical_care
+
+  - story: hostel_timings_story
+    steps:
+      - intent: ask_hostel_timings
+      - action: utter_hostel_timings
+
+  - story: gym_facilities_story
+    steps:
+      - intent: ask_gym_facilities
+      - action: utter_gym_facilities
+
+  - story: sports_facilities_story
+    steps:
+      - intent: ask_sports_facilities
+      - action: utter_sports_facilities
+
+  - story: inquire about placements
+    steps:
+      - intent: inquire_placements
+      - action: utter_placements_info
+
+  - story: placements_cse_story
+    steps:
+      - intent: ask_placements_cse
+      - action: utter_placements_cse
+
+  - story: placements_ece_story
+    steps:
+      - intent: ask_placements_ece
+      - action: utter_placements_ece
+
+  - story: placements_mech_story
+    steps:
+      - intent: ask_placements_mech
+      - action: utter_placements_mech
+
+  - story: placements_civil_story
+    steps:
+      - intent: ask_placements_civil
+      - action: utter_placements_civil
+
+  - story: placements_eee_story
+    steps:
+      - intent: ask_placements_eee
+      - action: utter_placements_eee
+
+  - story: inquire about research
+    steps:
+      - intent: inquire_research
+      - action: utter_research_info
+

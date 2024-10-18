@@ -1,0 +1,394 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - inquire_course
+  - inquire_admission
+  - inquire_institute_info
+  - inquire_vision
+  - inquire_mission
+  - inquire_trustee
+  - inquire_secretary
+  - inquire_principal
+  - inquire_deans
+  - inquire_hods
+  - inquire_committees
+  - inquire_programmes
+  - inquire_examcell
+  - inquire_regulation
+  - inquire_timetable
+  - inquire_calendar
+  - inquire_facilities
+  - ask_facility_library
+  - ask_facility_hostel
+  - ask_facility_wifi
+  - ask_facility_sports
+  - ask_facility_transport
+  - ask_facility_auditorium
+  - ask_facility_cafeteria
+  - ask_facility_laboratories
+  - inquire_hostel
+  - ask_boys_hostel
+  - ask_girls_hostel
+  - ask_room_types
+  - ask_wifi_facility
+  - ask_dining_facilities
+  - ask_recreation_study_areas
+  - ask_laundry_service
+  - ask_medical_care
+  - ask_hostel_timings
+  - ask_gym_facilities
+  - ask_sports_facilities
+  - inquire_placements
+  - ask_placements_cse
+  - ask_placements_ece
+  - ask_placements_mech
+  - ask_placements_civil
+  - ask_placements_eee
+  - inquire_research
+
+entities:
+  - program
+
+responses:
+  utter_iamabot:
+    - text: "I am a chatbot here to assist you!"
+
+  utter_welcome:
+    - text: "Welcome to PSG iTech! How can I assist you today?"
+
+  utter_institute_info:
+    - text: "PSG iTech, the latest initiative of PSG and Sons’ Charities, aims to enhance youth empowerment through technical education, focusing on learning, industry engagement, and ethics."
+
+  utter_vision_info:
+    - text: "Our vision is to achieve excellence in education and research, nurturing engineers with ethics to face global challenges."
+
+  utter_mission_info:
+    - text: "Our mission is to facilitate active learning and vocational training, foster industry-institute collaboration, and ignite passion for creative work towards a sustainable world."
+
+  utter_trustee_info:
+    - text: |
+        Shri. L. Gopalakrishnan is the Managing Trustee of PSG & Sons’ Charities. He believes in nurturing, enhancing, and empowering students to face the global challenges with strong ethics and employability skills. PSG Institutions, with its long history, has an impeccable reputation for producing high-caliber individuals ready for the professional world.
+
+        Contact details:
+        91 422 2572265
+        charity@psgtech.edu
+
+  utter_secretary_info:
+    - text: |
+        Dr. P V. Mohanram is the Secretary of PSG iTech. He emphasizes the importance of industry collaboration and providing students with face-to-face interactions with top-level industry professionals. Under his leadership, PSG iTech students receive expert guidance, participate in internships, and benefit from modernized infrastructure.
+
+        Contact details:
+        91 422 3933666
+        secretary@psgitech.ac.in
+
+  utter_principal_info:
+    - text: |
+        Dr. N. Saravanakumar is the Principal of PSG iTech, which was established in 2014. PSG iTech is a preferred destination for technical education in Tamil Nadu, known for its excellent academics, placements, and infrastructure. Under his guidance, students are prepared to become global leaders in their respective fields.
+
+        Contact details:
+        0422-3933445
+        principal@psgitech.ac.in
+
+  utter_deans_info:
+    - text: |
+        The Deans at PSG iTech include:
+        - Dr. C. L. Vasu (Dean - Academics)
+        - Dr. P. Vijayakumar (Dean - Electrical and Computer Engineering)
+        - Dr. P. Manoj Kumar (Lead - Research)
+
+  utter_hods_info:
+    - text: |
+        Heads of Departments (HoDs) at PSG iTech include:
+        - Dr. M. I. Abdul Aleem (Civil Engineering)
+        - Dr. R. Manimegalai (Computer Science and Engineering)
+        - Dr. P. Vijayakumar (Electronics and Communication Engineering)
+        - Dr. C. S. Subash Kumar (Electrical and Electronics Engineering)
+        - Dr. R. Ramesh (Mechanical Engineering)
+        - Dr. V. Jailaxmi (Mathematics)
+        - Dr. S. Maruthamuthu (Physics)
+        - Dr. G. Latha (Chemistry)
+        - Dr. K. Pramila (English)
+
+  utter_committees_info:
+    - text: |
+        PSG iTech has several institutional committees, including:
+        - Anti-Ragging Committee
+        - Internal Complaints Committee
+        - SC/ST Committee
+        - Students Grievance Redressal Committee
+        - Alumni Association
+        - Academic Research Committee
+
+  utter_programmes_info:
+    - text: |
+        **B.E Programmes**:
+        - Civil Engineering: 60 intake, 4 years
+        - Computer Science and Engineering: 180 intake, 4 years
+        - Electrical and Electronics Engineering: 60 intake, 4 years
+        - Electronics and Communication Engineering: 120 intake, 4 years
+        - Instrumentation and Control Engineering: 60 intake, 4 years
+        - Mechanical Engineering: 60 intake, 4 years
+
+        **B.Tech Programmes**:
+        - Artificial Intelligence and Data Science: 60 intake, 4 years
+
+        **M.E Programmes**:
+        - Structural Engineering [Civil Engineering]: 12 intake, 2 years
+        - Engineering Design [Mechanical Engineering]: 12 intake, 2 years
+
+  utter_examcell_info:
+    - text: |
+        The Exam Cell at PSG iTech oversees student and faculty profiles on the Anna University web portal, conducts internal tests and practical exams, uploads internal assessments, generates hall tickets, and conducts end-semester exams following Anna University guidelines.
+
+        **Exam Cell Coordinators**:
+        - Dr. S. Aramuthakannan
+        - Dr. G. Latha
+
+        **Exam Cell Staff**:
+        - Mr. S. Suresh Kumar (Assistant)
+        - Ms. T. Pangajamani (Assistant)
+        - Mr. S. Iyyappan (Junior Assistant)
+
+        Contact:
+        Phone: 0422 3933 449
+        Email: examcell@psgitech.ac.in
+
+  utter_regulation_info:
+    - text: "For regulations and curriculum, please visit [Regulation and Curriculum](https://psgitech.ac.in/regulation-and-curriculum)."
+  
+  utter_facilities_info:
+    - text: |
+        PSG iTech provides a range of modern facilities to support students academic and extracurricular activities:
+        - State-of-the-Art Laboratories:
+          Fully equipped laboratories for various engineering departments to promote hands-on learning and research.
+        - Central Library:
+          A spacious library with thousands of books, journals, e-resources, and study spaces for students.
+        - Wi-Fi Enabled Campus:
+          Seamless internet access across the campus for academic and research purposes.
+        - Sports Facilities:
+          Outdoor and indoor facilities including basketball courts, cricket grounds, and a gymnasium for physical fitness and recreation.
+        - Hostel Accommodations:
+          Separate well-furnished hostels for boys and girls with all necessary amenities for a comfortable stay.
+        - Auditoriums and Seminar Halls:
+          Fully air-conditioned auditoriums for events, lectures, and cultural programs.
+        - Cafeteria:
+          A hygienic and spacious cafeteria offering a variety of food options.
+        - Transport:
+          College buses are available for students commuting from various parts of the city.
+
+  utter_facility_library:
+    - text: |
+        The PSG iTech Central Library is not just a repository of knowledge but a dynamic learning center. It holds over 50,000 volumes, covering a wide range of academic subjects, alongside national and international journals, e-books, e-journals, and databases like IEEE, Springer, and J-Gate. The library offers separate reading areas for undergraduate, postgraduate, and research students. With RFID-based issue/return systems, it promotes efficiency. The digital library section allows access to a wealth of e-resources, and students can even use online databases remotely via the library portal. The library also hosts regular workshops, book exhibitions, and orientation sessions to help students develop research and information literacy skills.
+
+  utter_facility_hostel:
+    - text: |
+        PSG iTech provides secure, comfortable hostel accommodations for both boys and girls, designed to cater to students’ academic and personal needs. Each hostel block includes study halls, recreational areas with television and indoor games, and Wi-Fi connectivity to support academic work. The hostel mess offers a variety of vegetarian and non-vegetarian meal options, with attention to balanced nutrition. Additionally, there is round-the-clock security with CCTV surveillance, biometric access, and medical care, including an in-house doctor and ambulance services. For leisure, there are common areas and weekend movie screenings, and students can access nearby sports facilities like cricket grounds and basketball courts.
+
+  utter_facility_wifi:
+    - text: |
+        PSG iTech provides 24/7 Wi-Fi connectivity throughout the campus, ensuring that students, staff, and faculty have uninterrupted access to high-speed internet. The network is built on a robust infrastructure, allowing simultaneous access for a large number of users across various devices. The Wi-Fi extends to classrooms, libraries, hostels, auditoriums, and common areas, promoting a connected learning environment. The IT department regularly monitors the bandwidth to ensure consistent speeds. Students can easily access online resources for assignments, research papers, video lectures, and collaborative tools, making the campus a digitally integrated space for learning and innovation.
+
+  utter_facility_sports:
+    - text: |
+        PSG iTech is dedicated to promoting physical fitness and holistic development through its well-maintained sports facilities. The campus boasts outdoor grounds for cricket, football, volleyball, and athletics, as well as courts for basketball, badminton, and tennis. There is an indoor sports complex with table tennis, chess, and carrom for indoor enthusiasts. The fully equipped gymnasium has modern equipment, including treadmills, weight machines, and free weights, catering to both strength and endurance training. In addition to recreational sports, the college encourages participation in intercollegiate and national-level tournaments. Professional coaches and physical trainers are available to guide students and help them excel in various sports activities.
+
+  utter_facility_transport:
+    - text: |
+        PSG iTech ensures a safe and reliable transportation system with a fleet of well-maintained buses covering over 30 different routes in and around Coimbatore. The buses are equipped with GPS tracking for real-time monitoring and are air-conditioned for comfort. The transportation department offers a flexible bus schedule to accommodate academic hours, extracurricular activities, and late-hour lab sessions. In addition, PSG iTech has collaborated with transport services to provide emergency pickup and drop-off services during non-working hours, ensuring that students can commute to the campus at any time with safety and ease.
+
+  utter_facility_auditorium:
+    - text: |
+        PSG iTech's auditoriums and seminar halls are equipped with cutting-edge AV technology, making them ideal for hosting a variety of events such as guest lectures, academic conferences, workshops, cultural programs, and tech fests. The main auditorium seats over 500 people and includes high-definition projectors, surround sound, and smart lighting systems. Smaller seminar halls are designed for more focused academic interactions, and they are equipped with interactive boards and video conferencing facilities for virtual guest speakers. These venues play a pivotal role in fostering a collaborative and inspiring environment where students can engage in intellectual and creative pursuits.
+
+  utter_facility_cafeteria:
+    - text: |
+        The PSG iTech cafeteria is a vibrant hub that caters to the culinary needs of students, faculty, and staff. It offers a wide variety of fresh, hygienic food, including South Indian, North Indian, and continental dishes. Special attention is given to maintaining food quality, with regular health and safety inspections. The cafeteria also includes a juice bar, snack counters, and a separate section for coffee and tea, offering students a range of options for every meal. It operates extended hours, accommodating students with different schedules, and offers both dine-in and takeaway services. The cafeteria also arranges special themed food days to celebrate various festivals and cultural events.
+
+  utter_facility_laboratories:
+    - text: |
+        PSG iTech prides itself on offering state-of-the-art laboratories, which serve as a critical platform for hands-on learning, research, and innovation. Each department is equipped with specialized labs. For instance, the Mechanical Engineering department boasts CNC machines and material testing labs, while the Electronics department provides advanced VLSI, microprocessor, and embedded systems labs. Computer Science students have access to AI and data science labs with high-performance computing systems. The labs are updated regularly with industry-standard equipment, enabling students to work on live projects and research alongside faculty. The college also encourages student-led research projects, providing access to labs even after hours for innovation and experimentation.
+  utter_hostel_info:
+    - text: |
+        PSG iTech offers excellent hostel accommodations for both boys and girls, providing a safe and comfortable living environment. Key features of the hostel facilities include:
+        - Separate Hostels for Boys and Girls:
+           Well-furnished and secure hostels with 24/7 supervision.
+        - Room Types:
+           Options for both single and shared rooms, depending on the student's preference and availability.
+        - Amenities:
+          Each room is equipped with beds, study tables, chairs, storage cupboards, and ceiling fans.
+        - Wi-Fi Access:
+          High-speed internet is available in the hostels for academic purposes.
+        - Dining Facilities:
+          A hygienic dining hall that offers a variety of nutritious meals, catering to different dietary needs.
+        - Recreation and Study Areas:
+          Common rooms for relaxation and group study areas for collaborative learning.
+        - Laundry Services:
+          Regular laundry services are provided to all hostel residents.
+        - Medical Care:
+          First-aid and medical assistance are available within the hostel premises.
+  
+  utter_boys_hostel:
+    - text: |
+        PSG iTech has a well-furnished and secure hostel for boys, offering a safe and comfortable living environment. The boys' hostel is equipped with:
+        - 24/7 security personnel and CCTV surveillance for safety.
+        - Spacious rooms with proper ventilation and natural lighting.
+        - Dedicated wardens for supervision, ensuring discipline and smooth functioning.
+        - In-house maintenance staff for cleaning and repairs.
+        - Proximity to the academic buildings for easy access to classrooms and labs.
+
+  utter_girls_hostel:
+    - text: |
+        PSG iTech provides a separate, secure hostel for girls, prioritizing safety and comfort. Key features include:
+        - 24/7 security with CCTV monitoring and biometric access to ensure safety.
+        - Well-lit, spacious rooms designed to provide a home-like environment.
+        - Female wardens and support staff present around the clock for assistance.
+        - Regular room cleaning and housekeeping services.
+        - Separate study halls within the hostel for uninterrupted academic focus.
+        - Easy access to medical assistance, with female doctors on-call.
+
+  utter_room_types:
+    - text: |
+        The hostel offers a variety of room types to cater to different needs:
+        - Single rooms: For students who prefer privacy, offering individual study areas and personal storage.
+        - Shared rooms: Options for double or triple occupancy, promoting social interaction and collaboration.
+        - All rooms are equipped with essential amenities such as study tables, chairs, ceiling fans, and wardrobes.
+        - Rooms are cleaned regularly, and sanitation standards are strictly maintained.
+        - Rooms are allocated based on availability and preferences, with priority given to senior students for single occupancy.
+
+  utter_wifi_facility:
+    - text: |
+        Yes, high-speed Wi-Fi access is available in the hostels for academic and personal use. The network offers:
+        - Uninterrupted access to online academic resources and virtual classrooms.
+        - Strong signal strength in all rooms and common areas, including study halls.
+        - Secure login with individual student credentials to ensure data privacy.
+        - Technical support available to resolve any connectivity issues.
+        - Bandwidth allocated to ensure smooth video streaming for online lectures and research work.
+
+  utter_dining_facilities:
+    - text: |
+        The hostel has a hygienic and spacious dining hall that caters to diverse dietary needs. Key features include:
+        - Well-balanced meals served three times a day, designed by a nutritionist to ensure students' health and well-being.
+        - Special meals for students with dietary restrictions (e.g., vegetarian, vegan, gluten-free).
+        - Clean and sanitized kitchen area, with regular inspections by health authorities.
+        - Filtered drinking water and the option for hot beverages like tea and coffee during breakfast and evening hours.
+        - Dining staff who ensure food quality and cleanliness at all times.
+
+  utter_recreation_study_areas:
+    - text: |
+        The hostel provides ample spaces for both relaxation and focused study. Facilities include:
+        - Common rooms equipped with comfortable seating and entertainment options like TVs and board games.
+        - Designated study halls with noise-free environments and study desks for individual or group study.
+        - Indoor games such as table tennis, carrom, and chess to help students unwind.
+        - Quiet hours are enforced in the study areas to promote productivity.
+        - Regular events such as quiz competitions, movie nights, and talent shows organized to encourage social interaction.
+
+  utter_laundry_service:
+    - text: |
+        Regular laundry services are provided to ensure convenience and hygiene for hostel residents. The services include:
+        - Washing and drying facilities available on a scheduled basis, with pick-up and drop-off services.
+        - Separate laundry areas for boys and girls, with fully automated washing machines and dryers.
+        - Ironing services for formal and uniform wear.
+        - Proper handling of clothes to avoid damage, with laundry staff monitoring quality.
+        - Personal laundry slots assigned to students to manage the laundry load.
+        - Option to use in-house washing machines for students who prefer to do their own laundry.
+
+  utter_medical_care:
+    - text: |
+        The hostel provides essential medical care and first-aid facilities. Available resources include:
+        - A dedicated first-aid room within the hostel premises, stocked with basic medical supplies.
+        - On-call doctors and tie-ups with nearby hospitals for emergencies.
+        - Regular medical check-ups for students to ensure their health and well-being.
+        - A 24/7 ambulance service available for transportation in case of emergencies.
+        - Health awareness programs and workshops organized periodically to educate students on wellness and preventive care.
+
+  utter_hostel_timings:
+    - text: |
+        The hostel follows strict timings to ensure the safety and discipline of the residents:
+        - Curfew: All students are required to return to the hostel by 9:30 PM.
+        - Entry after curfew requires prior permission from the hostel warden, and late entries are recorded.
+        - Hostel gates open at 6:00 AM, allowing students to leave early if needed for academic or sports-related activities.
+        - Hostel administration ensures compliance with these timings for the safety of all residents.
+
+  utter_gym_facilities:
+    - text: |
+        The hostel offers a fully-equipped gym with modern fitness equipment. Features include:
+        - Cardio machines (treadmills, ellipticals) and weight training equipment (dumbbells, barbells).
+        - Designated workout areas for yoga, stretching, and strength training.
+        - Fitness trainers available during specific hours to guide students on proper exercise techniques.
+        - Gym timings: Open from 6:00 AM to 9:00 PM to accommodate students' schedules.
+        - Separate workout timings for boys and girls to ensure comfort and privacy.
+        - Hygiene standards maintained, with regular cleaning and disinfection of equipment.
+
+  utter_sports_facilities:
+    - text: |
+        The hostel offers a variety of sports facilities to promote physical fitness and recreation. These include:
+        - **Indoor sports**: Table tennis, carrom, chess, and other board games available in common rooms.
+        - **Outdoor sports**: Dedicated courts for basketball, volleyball, and badminton.
+        - **Field games**: A large playground for football and cricket, with regular practice sessions organized.
+        - Sports equipment is provided, and students can borrow gear from the hostel office.
+        - Regular tournaments and sports events held to encourage participation and team spirit.
+        - A fitness track around the campus for morning and evening jogging.
+
+  utter_placements_info: 
+    - text: |
+        PSG iTech has a robust placement system, ensuring that students are well-prepared for the job market. Here's what you can expect:
+        - High Placement Rate:
+          Over 90% of students are placed every year in top companies.
+        - Key Recruiters:
+          Renowned companies like **Infosys, TCS, Cognizant, Bosch, and Amazon** are regular recruiters.
+        - Support from Placement Cell:
+          PSG iTech provides excellent training through the **Placement Cell**, including resume reviews, mock interviews, and skill development workshops.
+        - Internship Opportunities:
+          Students get internships that often convert into full-time jobs.
+        - Salary Packages:
+          Average salary packages offered are between **INR 4 and 6 LPA**, with some students receiving even higher packages. 
+
+  utter_placements_cse:
+    - text: |
+        The CSE department at PSG iTech has an excellent placement record:
+        - Over 95% of students are placed every year.
+        - Companies like **Google, Microsoft, Amazon, Infosys, and TCS** recruit regularly.
+        - The average salary package is **INR 5.5 LPA**, with some students receiving packages as high as **INR 15 LPA**.
+        - Students also receive multiple internship offers, which often lead to full-time roles.
+
+  utter_placements_ece:
+    - text: |
+        The ECE department sees a consistent placement rate of over 90%:
+        - Top recruiters include **Bosch, Qualcomm, Texas Instruments, Cognizant, and HCL**.
+        - The average salary package is **INR 5 LPA**.
+        - Internship opportunities are abundant, often converting into permanent positions.
+
+  utter_placements_mech:
+    - text: |
+        Mechanical Engineering students have a solid placement rate of over 85%:
+        - Key recruiters include **Ashok Leyland, Mahindra, Tata Motors, Bosch, and L&T**.
+        - The average salary package is **INR 4.5 LPA**.
+        - Mechanical students also get internship opportunities in core mechanical and manufacturing industries.
+
+  utter_placements_civil:
+    - text: |
+        Civil Engineering students at PSG iTech have a placement rate of around 80%:
+        - Recruiters include **L&T, Shapoorji Pallonji, and Reliance Infrastructure**.
+        - Average salary packages range from **INR 3.5 to 5 LPA**.
+        - Civil students also gain internship experience through construction and infrastructure projects.
+
+  utter_placements_eee:
+    - text: |
+        The EEE department has a consistent placement rate of over 90%:
+        - Key recruiters include **Schneider Electric, ABB, Siemens, and Tata Power**.
+        - The average salary package is **INR 4.8 LPA**, with some students receiving higher packages.
+        - Many students receive internships in the core electrical engineering domain, leading to full-time job offers.
+
+  utter_research_info:
+    - text: "PSG iTech promotes research through advanced labs in AI, IoT, and renewable energy. Students engage in projects funded by organizations like DRDO and ISRO, with financial support and industry collaborations. The institute also encourages publishing in reputed journals and presenting at conferences."  
+
+  utter_timetable_info:
+    - text: "You can view the timetable at [Time Table](https://psgitech.ac.in/time-tables)."
+
+  utter_calendar_info:
+    - text: "Check out the academic calendar at [Academic Calendar](https://psgitech.ac.in/academics-calender)."
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day!"

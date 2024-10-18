@@ -1,0 +1,104 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+  }
+ 
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://psgitech.ac.in/uploads/main_website/image_slider/2024/13.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
+  }
+  h1{
+    font-size:45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(235, 28, 28);
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .chat-container {
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .chat-window {
+    height: 400px;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+ 
+  .user-message {
+    align-self: flex-start;
+    background-color: #d1e7dd;
+    color: #0f5132;
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+  }
+
+  .bot-message {
+    align-self: flex-end;
+    background-color: #cff4fc;
+    color: #0accf3;
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+  }
+  
+
+  .input-container {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  #chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  #mic-button {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

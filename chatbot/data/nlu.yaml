@@ -1,0 +1,353 @@
+version: "3.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hello
+      - hi
+      - hey
+      - good morning
+      - good afternoon
+      - greetings
+  - intent: inquire_course
+    examples: |
+      - What courses do you offer?
+      - Tell me about the engineering programs.
+      - What are the available programs at PSG iTech?
+      - Can you list the courses available?
+      - I am interested in engineering, what do you have?
+      - Which programs can I study at PSG iTech?
+  - intent: inquire_admission
+    examples: |
+      - How can I apply for admission?
+      - What are the admission requirements?
+      - Tell me about the admission process.
+      - How do I get into PSG iTech?
+      - What is the eligibility for admission?
+      - Where can I find the admission details?
+  - intent: inquire_institute_info
+    examples: |
+      - What is PSG iTech all about?
+      - Can you provide some information about PSG Institute of Technology?
+      - I'd like to know more about PSG Institute of Technology and Applied Research.
+      - What is PSG iTech known for?
+      - How is PSG iTech different from other institutes?
+      - Could you tell me what PSG iTech offers?
+  - intent: inquire_vision
+    examples: |
+      - What is the long-term vision of PSG iTech?
+      - How does PSG iTech define its vision?
+      - What future goals does PSG iTech have?
+      - What vision guides PSG Institute of Technology?
+      - Could you explain the vision of PSG iTech in detail?
+      - What is PSG iTech's vision for the students and faculty?
+  - intent: inquire_mission
+    examples: |
+      - What is the mission statement of PSG iTech?
+      - How does PSG iTech describe its mission?
+      - What is the purpose behind PSG iTech’s mission?
+      - Can you share PSG iTech’s goals and mission?
+      - What mission drives PSG Institute of Technology?
+      - What objectives does PSG iTech aim to achieve through its mission?
+  - intent: inquire_trustee
+    examples: |
+      - Can you tell me who the Managing Trustee of PSG Institutions is?
+      - Who is in charge of PSG Institutions?
+      - Tell me about the leadership at PSG Institutions.
+      - Who manages PSG Institutions?
+      - What role does Shri. L. Gopalakrishnan play at PSG Institutions?
+      - Who is the main trustee for PSG Institutions?
+  - intent: inquire_secretary
+    examples: |
+      - Who is the current Secretary of PSG iTech?
+      - Can you tell me more about Dr. P V. Mohanram?
+      - Who holds the position of Secretary at PSG iTech?
+      - What role does the Secretary play at PSG iTech?
+      - Who is responsible for academic administration at PSG iTech?
+      - I'd like to know about the Secretary at PSG Institute.
+  - intent: inquire_principal
+    examples: |
+      - Who is the current Principal at PSG iTech?
+      - Tell me about the Principal of PSG iTech.
+      - Can you provide information about Dr. N Saravanakumar?
+      - Who is leading the academic team at PSG iTech?
+      - I'd like to know more about the Principal of PSG Institute.
+      - Who is the head of PSG iTech in terms of academics?
+  - intent: inquire_deans
+    examples: |
+      - Can you tell me who the deans at PSG iTech are?
+      - I’d like to know about the deans.
+      - Who manages the academic departments at PSG iTech?
+      - Give me details about the deans at PSG Institute.
+      - How many deans are there at PSG iTech?
+      - Who are the top academic officials at PSG iTech?
+  - intent: inquire_hods
+    examples: |
+      - Who heads the departments at PSG iTech?
+      - Can you tell me about the heads of departments at PSG iTech?
+      - Who are the department heads at PSG iTech?
+      - I'd like to know who the HoDs are.
+      - Who manages the different departments at PSG Institute?
+      - Give me the names of the HoDs at PSG iTech.
+  - intent: inquire_committees
+    examples: |
+      - What are the various committees in PSG iTech?
+      - Can you list the institutional committees at PSG iTech?
+      - I'd like to know about the committees.
+      - Tell me about the student and staff committees at PSG iTech.
+      - Who oversees the committees at PSG iTech?
+      - What committees does PSG iTech have?
+  - intent: inquire_programmes
+    examples: |
+      - What programmes are offered at PSG iTech?
+      - Tell me about the B.E and M.E programs. - What undergraduate programmes does PSG iTech offer?
+      - Can you tell me about the available courses at PSG iTech?
+      - I'd like to know more about the B.Tech and M.E programs.
+      - What are the academic programs offered at PSG iTech?
+      - What degree courses are available at PSG iTech?
+      - What programs are there for engineering students at PSG iTech?
+  - intent: inquire_examcell
+    examples: |
+      - What does the Exam Cell at PSG iTech do?
+      - Can you give me details about the Exam Cell at PSG iTech?
+      - Who manages the exams at PSG iTech?
+      - I'd like to know more about the exam procedures at PSG iTech.
+      - Tell me about the exam coordinators and staff.
+      - How does the Exam Cell at PSG iTech work?
+  - intent: inquire_regulation
+    examples: |
+      - Where can I find the rules and regulations for PSG iTech?
+      - Can you provide information on the academic regulations?
+      - I'd like to know about the curriculum and regulations.
+      - How can I access PSG iTech's regulations and curriculum details?
+      - What are the academic rules followed at PSG iTech?
+      - Where can I check the PSG iTech regulations and course structure?
+  - intent: inquire_facilities
+    examples: |
+      - What facilities are available at PSG iTech campus?
+      - Can you tell me about the student facilities at PSG iTech?
+      - What are the amenities provided for students at PSG Institute?
+      - Does PSG iTech have good infrastructure?
+      - I'd like to know about the laboratories and other facilities at PSG iTech.
+      - What kind of campus facilities does PSG iTech offer?
+      
+  - intent: ask_facility_library
+    examples: |
+      - Tell me about the library
+      - What facilities are available in the library?
+      - How is the central library in PSG iTech?
+      - Does the college have a central library?
+
+  - intent: ask_facility_hostel
+    examples: |
+      - Can you tell me about the hostel accommodations?
+      - What are the hostel facilities like?
+      - Do you provide hostel accommodation?
+      - Are there separate hostels for boys and girls?
+
+  - intent: ask_facility_wifi
+    examples: |
+      - Does the campus have Wi-Fi?
+      - Is Wi-Fi available at PSG iTech?
+      - Can students access Wi-Fi throughout the campus?
+      - What is the Wi-Fi facility at PSG iTech?
+
+  - intent: ask_facility_sports
+    examples: |
+      - What sports facilities does PSG iTech have?
+      - Are there sports facilities on campus?
+      - What indoor and outdoor sports are available?
+      - Do you have a gym at PSG iTech?
+
+  - intent: ask_facility_transport
+    examples: |
+      - Do you provide transport facilities?
+      - Are there college buses?
+      - How can students commute to PSG iTech?
+      - Does the college offer bus services?
+
+  - intent: ask_facility_auditorium
+    examples: |
+      - Do you have auditoriums in the college?
+      - Tell me about the seminar halls.
+      - Are there air-conditioned seminar halls in the college?
+      - Does PSG iTech have an auditorium?
+
+  - intent: ask_facility_cafeteria
+    examples: |
+      - Is there a cafeteria on campus?
+      - What food options are available at PSG iTech?
+      - Does PSG iTech have a cafeteria?
+      - Tell me about the canteen in PSG iTech.
+
+  - intent: ask_facility_laboratories
+    examples: |
+      - Tell me about the laboratories in the college.
+      - Are there well-equipped labs?
+      - Does PSG iTech have research labs?
+      - What kind of labs are available for students?
+
+  - intent: inquire_hostel
+    examples: |
+      - Does PSG iTech have hostel facilities?
+      - Can you tell me about the hostel accommodations at PSG iTech?
+      - I'd like to know more about the hostel life at PSG Institute.
+      - Are there separate hostels for boys and girls at PSG iTech?
+      - How are the hostel rooms at PSG iTech?
+      - What amenities are provided in PSG iTech hostels?
+  - intent: ask_boys_hostel
+    examples: |
+      - Do you have a boys' hostel?
+      - What are the facilities for boys' hostel at PSG iTech?
+      - Tell me about the boys' hostel.
+      - Is there a separate hostel for boys?
+
+  - intent: ask_girls_hostel
+    examples: |
+      - Do you have a girls' hostel?
+      - What are the facilities for girls' hostel at PSG iTech?
+      - Tell me about the girls' hostel.
+      - Is there a separate hostel for girls?
+
+  - intent: ask_room_types
+    examples: |
+      - What types of rooms are available in the hostel?
+      - Can I get a single room in the hostel?
+      - What are the room options in the hostel?
+      - Do you offer shared rooms in the hostel?
+
+  - intent: ask_wifi_facility
+    examples: |
+      - Is Wi-Fi available in the hostels?
+      - Do hostels provide internet access?
+      - What about internet facilities in the hostel?
+      - Can we use Wi-Fi in the hostels?
+
+  - intent: ask_dining_facilities
+    examples: |
+      - What are the dining facilities in the hostel?
+      - Is food available in the hostel?
+      - Can you tell me about the mess facilities?
+      - Do you provide meals for hostel students?
+
+  - intent: ask_recreation_study_areas
+    examples: |
+      - Are there any recreation areas in the hostel?
+      - Can I study in the hostel?
+      - What about study rooms in the hostel?
+      - Is there any common room in the hostel?
+
+  - intent: ask_laundry_service
+    examples: |
+      - Is there any laundry service in the hostel?
+      - Can I wash my clothes in the hostel?
+      - What laundry facilities are provided?
+      - Is laundry included in hostel amenities?
+
+  - intent: ask_medical_care
+    examples: |
+      - Is medical care available in the hostel?
+      - What medical facilities are there in the hostel?
+      - Do hostels provide first aid?
+      - Is there any medical assistance for hostel students?
+
+  - intent: ask_hostel_timings
+    examples: |
+      - What are the hostel timings?
+      - When does the hostel close at night?
+      - What is the curfew time in the hostel?
+      - Can I come back late to the hostel?
+
+  - intent: ask_gym_facilities
+    examples: |
+      - Is there a gym in the hostel?
+      - Can I work out in the hostel gym?
+      - Do you have a fitness center for students?
+      - What gym facilities are provided?
+
+  - intent: ask_sports_facilities
+    examples: |
+      - What sports facilities are available in the hostel?
+      - Are there indoor sports facilities in the hostel?
+      - What outdoor games can be played at PSG iTech hostel?
+      - Can I play football or cricket at the hostel?
+    
+  - intent: inquire_placements
+    examples: |
+      - What are the placement statistics for PSG iTech?
+      - Can you tell me about the companies that visit PSG iTech for placements?
+      - How are the placements at PSG iTech?
+      - I'd like to know about the placement opportunities for PSG iTech students.
+      - What kind of placements does PSG Institute offer?
+      - What are the placement prospects for engineering students at PSG iTech?
+
+  - intent: ask_placements_cse
+    examples: |
+      - What are the placement statistics for the CSE department?
+      - How are the placements for CSE students?
+      - Placement details for Computer Science students at PSG iTech.
+      - Tell me about CSE placements.
+
+  - intent: ask_placements_ece
+    examples: |
+      - What are the placement statistics for the ECE department?
+      - How are the placements for ECE students?
+      - Placement details for Electronics students at PSG iTech.
+      - Tell me about ECE placements.
+
+  - intent: ask_placements_mech
+    examples: |
+      - What are the placement statistics for the Mechanical department?
+      - How are the placements for Mechanical students?
+      - Placement details for Mechanical students at PSG iTech.
+      - Tell me about Mechanical placements.
+
+  - intent: ask_placements_civil
+    examples: |
+      - What are the placement statistics for the Civil department?
+      - How are the placements for Civil students?
+      - Placement details for Civil students at PSG iTech.
+      - Tell me about Civil placements.
+
+  - intent: ask_placements_eee
+    examples: |
+      - What are the placement statistics for the EEE department?
+      - How are the placements for EEE students?
+      - Placement details for Electrical students at PSG iTech.
+      - Tell me about EEE placements.
+
+  - intent: inquire_research
+    examples: |
+      - What research opportunities does PSG iTech provide?
+      - Can you tell me about the research programs at PSG iTech?
+      - I'd like to know about research facilities at PSG iTech.
+      - What research projects are currently happening at PSG Institute?
+      - How does PSG iTech support student research?
+      - Are there any research grants available for PSG iTech students?
+
+  - intent: inquire_timetable
+    examples: |
+      - How can I check the timetable for my classes at PSG iTech?
+      - Can you provide a link to the PSG iTech timetable?
+      - I need to know where the timetable is posted.
+      - Where can I access the class timetable for PSG iTech?
+      - Could you give me the academic timetable for this semester?
+      - Where can I find the daily schedule for PSG iTech?
+
+  - intent: inquire_calendar
+    examples: |
+      - Can you give me the academic calendar?
+      - Where is the PSG iTech calendar available?
+      - How do I access the academic calendar for PSG iTech?
+      - Could you share the academic schedule with me?
+      - I'd like to know the key academic dates for PSG iTech.
+      - Where can I view the official calendar for PSG iTech?
+
+  - intent: goodbye
+    examples: |
+      - I'm signing off, goodbye!
+      - Catch you later!
+      - It was nice talking to you, bye!
+      - See you soon, goodbye!
+      - Thanks for the help, have a great day!
+      - Take care, see you next time!
