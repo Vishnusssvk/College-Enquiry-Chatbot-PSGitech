@@ -1,0 +1,13 @@
+python -3.9
+rasa --(pip install rasa("create virtual environment"))
+XAMPP --(https://www.apachefriends.org/download.html)
+phpMyAdmin --(https://files.phpmyadmin.net/phpMyAdmin/5.2.1/phpMyAdmin-5.2.1-all-languages.zip)
+javaScript --(node modules (npm install))
+Directory Structure:
+\php\XAMPP\htdocs\<your directory>
+''your directory''
+|
+|  --rasa environment
+|  --chatbot
+|  --frontend
+|  --speech-text
