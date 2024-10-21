@@ -71,8 +71,8 @@ body {
 
   .bot-message {
     align-self: flex-end;
-    background-color: #cff4fc;
-    color: #0accf3;
+    background-color: #f7c82e;
+    color: #000000;
     padding: 8px 12px;
     border-radius: 10px;
     max-width: 70%;

@@ -15,6 +15,11 @@ stories:
     steps:
       - intent: inquire_institute_info
       - action: utter_institute_info
+  
+  - story: respond to admission inquiries
+    steps:
+      - intent: inquire_admission
+      - action: utter_admission_details
 
   - story: inquire about the vision
     steps:
@@ -221,3 +226,185 @@ stories:
       - intent: inquire_research
       - action: utter_research_info
 
+  - story: respond to cse admission inquiries
+    steps:
+      - intent: inquire_cse_admission
+      - action: utter_cse_admission_details
+
+  - story: respond to cse labs inquiries
+    steps:
+      - intent: inquire_cse_labs
+      - action: utter_cse_labs_details
+
+  - story: respond to cse faculty inquiries
+    steps:
+      - intent: inquire_cse_faculty
+      - action: utter_cse_faculty_details
+
+  - story: respond to cse research inquiries
+    steps:
+      - intent: inquire_cse_research
+      - action: utter_cse_research_details
+
+  - story: respond to cse placements inquiries
+    steps:
+      - intent: inquire_cse_placements
+      - action: utter_cse_placements_details
+
+
+  - story: respond to eee admission inquiries
+    steps:
+      - intent: inquire_eee_admission
+      - action: utter_eee_admission_details
+
+  - story: respond to eee labs inquiries
+    steps:
+      - intent: inquire_eee_labs
+      - action: utter_eee_labs_details
+
+  - story: respond to eee faculty inquiries
+    steps:
+      - intent: inquire_eee_faculty
+      - action: utter_eee_faculty_details
+
+  - story: respond to eee research inquiries
+    steps:
+      - intent: inquire_eee_research
+      - action: utter_eee_research_details
+
+  - story: respond to eee placements inquiries
+    steps:
+      - intent: inquire_eee_placements
+      - action: utter_eee_placements_details
+
+  - story: respond to ece admission inquiries
+    steps:
+      - intent: inquire_ece_admission
+      - action: utter_ece_admission_details
+
+  - story: respond to ece labs inquiries
+    steps:
+      - intent: inquire_ece_labs
+      - action: utter_ece_labs_details
+
+  - story: respond to ece faculty inquiries
+    steps:
+      - intent: inquire_ece_faculty
+      - action: utter_ece_faculty_details
+
+  - story: respond to ece research inquiries
+    steps:
+      - intent: inquire_ece_research
+      - action: utter_ece_research_details
+
+  - story: respond to ece placements inquiries
+    steps:
+      - intent: inquire_ece_placements
+      - action: utter_ece_placements_details
+
+
+  - story: respond to mech admission inquiries
+    steps:
+      - intent: inquire_mech_admission
+      - action: utter_mech_admission_details
+
+  - story: respond to mech labs inquiries
+    steps:
+      - intent: inquire_mech_labs
+      - action: utter_mech_labs_details
+
+  - story: respond to mech faculty inquiries
+    steps:
+      - intent: inquire_mech_faculty
+      - action: utter_mech_faculty_details
+
+  - story: respond to mech research inquiries
+    steps:
+      - intent: inquire_mech_research
+      - action: utter_mech_research_details
+
+  - story: respond to mech placements inquiries
+    steps:
+      - intent: inquire_mech_placements
+      - action: utter_mech_placements_details
+
+  - story: respond to civil admission inquiries
+    steps:
+      - intent: inquire_civil_admission
+      - action: utter_civil_admission_details
+
+  - story: respond to civil labs inquiries
+    steps:
+      - intent: inquire_civil_labs
+      - action: utter_civil_labs_details
+
+  - story: respond to civil faculty inquiries
+    steps:
+      - intent: inquire_civil_faculty
+      - action: utter_civil_faculty_details
+
+  - story: respond to civil research inquiries
+    steps:
+      - intent: inquire_civil_research
+      - action: utter_civil_research_details
+
+  - story: respond to civil placements inquiries
+    steps:
+      - intent: inquire_civil_placements
+      - action: utter_civil_placements_details
+
+  - story: respond to ai-ds admission inquiries
+    steps:
+      - intent: inquire_ai_ds_admission
+      - action: utter_ai_ds_admission_details
+
+  - story: respond to ai-ds labs inquiries
+    steps:
+      - intent: inquire_ai_ds_labs
+      - action: utter_ai_ds_labs_details
+
+  - story: respond to ai-ds faculty inquiries
+    steps:
+      - intent: inquire_ai_ds_faculty
+      - action: utter_ai_ds_faculty_details
+
+  - story: respond to ai-ds research inquiries
+    steps:
+      - intent: inquire_ai_ds_research
+      - action: utter_ai_ds_research_details
+
+  - story: respond to ai-ds placements inquiries
+    steps:
+      - intent: inquire_ai_ds_placements
+      - action: utter_ai_ds_placements_details
+  - story: CSE Alumni Story
+    steps:
+      - intent: ask_alumni_cse
+      - action: utter_cse_alumni
+
+  - story: EEE Alumni Story
+    steps:
+    - intent: ask_alumni_eee
+    - action: utter_eee_alumni
+
+  - story: ECE Alumni Story
+    steps:
+    - intent: ask_alumni_ece
+    - action: utter_ece_alumni
+
+  - story: Mechanical Alumni Story
+    steps:
+      - intent: ask_alumni_mechanical
+      - action: utter_mechanical_alumni
+
+  - story: Civil Alumni Story
+    steps:
+    - intent: ask_alumni_civil
+    - action: utter_civil_alumni
+
+  - story: AI-DS Alumni Story
+    steps:
+    - intent: ask_alumni_ai_ds
+    - action: utter_ai_ds_alumni
+    
+   

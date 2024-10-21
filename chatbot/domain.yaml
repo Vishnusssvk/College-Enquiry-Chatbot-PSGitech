@@ -47,6 +47,43 @@ intents:
   - ask_placements_civil
   - ask_placements_eee
   - inquire_research
+  - inquire_cse_admission
+  - inquire_cse_labs
+  - inquire_cse_faculty
+  - inquire_cse_research
+  - inquire_cse_placements
+  - inquire_eee_admission
+  - inquire_eee_labs
+  - inquire_eee_faculty
+  - inquire_eee_research
+  - inquire_eee_placements
+  - inquire_ece_admission
+  - inquire_ece_labs
+  - inquire_ece_faculty
+  - inquire_ece_research
+  - inquire_ece_placements
+  - inquire_mech_admission
+  - inquire_mech_labs
+  - inquire_mech_faculty
+  - inquire_mech_research
+  - inquire_mech_placements
+  - inquire_civil_admission
+  - inquire_civil_labs
+  - inquire_civil_faculty
+  - inquire_civil_research
+  - inquire_civil_placements
+  - inquire_ai_ds_admission
+  - inquire_ai_ds_labs
+  - inquire_ai_ds_faculty
+  - inquire_ai_ds_research
+  - inquire_ai_ds_placements
+  - ask_alumni_cse
+  - ask_alumni_eee
+  - ask_alumni_ece
+  - ask_alumni_mechanical
+  - ask_alumni_civil
+  - ask_alumni_ai_ds
+
 
 entities:
   - program
@@ -60,6 +97,11 @@ responses:
 
   utter_institute_info:
     - text: "PSG iTech, the latest initiative of PSG and Sons’ Charities, aims to enhance youth empowerment through technical education, focusing on learning, industry engagement, and ethics."
+
+  utter_admission_details:
+    - text: |
+        You can apply for admission at PSG iTech by visiting our official website's admission portal. The eligibility criteria include passing grades in your higher secondary exams and a valid entrance exam score. 
+        For more information, you can refer to [admission details here](https://www.psgitech.ac.in/admission/).
 
   utter_vision_info:
     - text: "Our vision is to achieve excellence in education and research, nurturing engineers with ethics to face global challenges."
@@ -392,3 +434,115 @@ responses:
 
   utter_goodbye:
     - text: "Goodbye! Have a great day!"
+  
+  utter_cse_admission_details:
+    - text: "You can apply for the CSE department by meeting the cutoff requirements and completing the necessary application process on the PSG iTech website. Check the [admissions page](https://cse.psgitech.ac.in/admission)."
+
+  utter_cse_labs_details:
+    - text: "The CSE department offers advanced labs such as programming, networking, and AI labs. Detailed information can be found [here](https://cse.psgitech.ac.in/labs)."
+
+  utter_cse_faculty_details:
+    - text: "The CSE department has experienced faculty members specializing in various fields. Visit [here](https://cse.psgitech.ac.in/faculty) for more."
+
+  utter_cse_research_details:
+    - text: "The CSE department focuses on research in AI, ML, data science, and more. Details are [here](https://cse.psgitech.ac.in/research)."
+
+  utter_cse_placements_details:
+    - text: "CSE graduates have a high placement rate with top companies recruiting students. Details can be found [here](https://cse.psgitech.ac.in/placements)."
+
+  utter_eee_admission_details:
+    - text: "For admission to the EEE department, please refer to the [EEE admissions page](https://eee.psgitech.ac.in/admission)."
+
+  utter_eee_labs_details:
+    - text: "The EEE department offers state-of-the-art labs for power electronics, circuits, and more. Lab details are [here](https://eee.psgitech.ac.in/labs)."
+
+  utter_eee_faculty_details:
+    - text: "The EEE department has highly qualified faculty members. Learn more about them [here](https://eee.psgitech.ac.in/faculty)."
+
+  utter_eee_research_details:
+    - text: "Research in EEE covers fields like renewable energy, smart grids, and more. Find out more [here](https://eee.psgitech.ac.in/research)."
+
+  utter_eee_placements_details:
+    - text: "EEE graduates are placed in top core and IT companies. Check out the placement records [here](https://eee.psgitech.ac.in/placements)."
+
+  utter_ece_admission_details:
+    - text: "You can find admission information for ECE on the [admissions page](https://ece.psgitech.ac.in/admission)."
+
+  utter_ece_labs_details:
+    - text: "The ECE department features labs like VLSI, communications, and embedded systems. Details can be found [here](https://ece.psgitech.ac.in/labs)."
+
+  utter_ece_faculty_details:
+    - text: "ECE has highly knowledgeable professors. Learn more about them [here](https://ece.psgitech.ac.in/faculty)."
+
+  utter_ece_research_details:
+    - text: "The ECE department focuses on wireless communications, signal processing, and more. Check out the research areas [here](https://ece.psgitech.ac.in/research)."
+
+  utter_ece_placements_details:
+    - text: "ECE graduates have excellent placement opportunities in core and IT sectors. Placement statistics are available [here](https://ece.psgitech.ac.in/placements)."
+
+  utter_mech_admission_details:
+    - text: "For admission to the Mechanical Engineering department, please refer to the [ME admissions page](https://mechanical.psgitech.ac.in/admission)."
+
+  utter_mech_labs_details:
+    - text: "Mechanical Engineering labs cover fields like thermodynamics, manufacturing, and more. Find out more [here](https://mechcanical.psgitech.ac.in/labs)."
+
+  utter_mech_faculty_details:
+    - text: "The Mechanical department has a diverse faculty team. Learn more about them [here](https://mechanical.psgitech.ac.in/faculty)."
+
+  utter_mech_research_details:
+    - text: "Research in Mechanical Engineering includes materials, manufacturing, and automation. More details are [here](https://mechanical.psgitech.ac.in/research)."
+
+  utter_mech_placements_details:
+    - text: "Mechanical Engineering graduates have good placement opportunities in core and IT sectors. Find placement records [here](https://mechanical.psgitech.ac.in/placements)."
+
+  utter_civil_admission_details:
+    - text: "For admission to the Civil Engineering department, visit the [Civil admissions page](https://civil.psgitech.ac.in/admission)."
+
+  utter_civil_labs_details:
+    - text: "The Civil Engineering department offers labs focused on construction materials, surveying, and more. Details are [here](https://civil.psgitech.ac.in/labs)."
+
+  utter_civil_faculty_details:
+    - text: "The Civil Engineering department has experienced professors. Learn more about them [here](https://civil.psgitech.ac.in/faculty)."
+
+  utter_civil_research_details:
+    - text: "Civil Engineering research covers areas like sustainable construction and water resources. Find more [here](https://civil.psgitech.ac.in/research)."
+
+  utter_civil_placements_details:
+    - text: "Civil Engineering graduates are recruited by top construction companies. Check out the placement statistics [here](https://civil.psgitech.ac.in/placements)."
+
+  utter_ai_ds_admission_details:
+    - text: "For AI and Data Science admissions, check out the detailed information [here](https://aids.psgitech.ac.in/admission)."
+
+  utter_ai_ds_labs_details:
+    - text: "The AI and Data Science department has advanced labs for machine learning, AI experiments, and data analytics. Lab details are available [here](https://aids.psgitech.ac.in/labs)."
+
+  utter_ai_ds_faculty_details:
+    - text: "Learn about the experienced AI and Data Science faculty [here](https://aids.psgitech.ac.in/faculty)."
+
+  utter_ai_ds_research_details:
+    - text: "Research in AI and Data Science focuses on deep learning, NLP, and more. Find research areas [here](https://aids.psgitech.ac.in/research)."
+
+  utter_ai_ds_placements_details:
+    - text: "AI-DS graduates are highly sought after by tech companies. View placement details [here](https://aids.psgitech.ac.in/placements)."
+
+  utter_cse_alumni:
+    - text: "Our CSE alumni include Ms. Danajitha K, known for her innovative work in artificial intelligence and machine learning, and Mr. Arun R, who has contributed significantly to software development for major tech companies. For more details, visit the [CSE Alumni page](https://cse.psgitech.ac.in/)."
+
+  utter_eee_alumni:
+    - text: "Alumni from the EEE department include Pournaa K, a leader in renewable energy technology, and Nishok P B, recognized for his pioneering work in electrical systems design. For more details, visit the [EEE Alumni page](https://eee.psgitech.ac.in/)."
+
+  utter_ece_alumni:
+    - text: "ECE alumni such as Mr. Dhananjay R, who specializes in embedded systems, and Ms. Amritha S, who has made strides in communication technology, praise their diverse learning experiences at PSG iTech. For more details, visit the [ECE Alumni page](https://ece.psgitech.ac.in/)."
+
+  utter_mechanical_alumni:
+    - text: "Mechanical engineering alumni like Mr. Selvam R, an expert in automotive engineering, and Ms. Rithika P, known for her work in sustainable design, have shared how the comprehensive curriculum prepared them for real-world challenges. For more details, visit the [MECH Alumni page](https://mechanical.psgitech.ac.in/)."
+
+  utter_civil_alumni:
+    - text: "Civil engineering alumni like Ms. Priya V, who excels in project management, and Mr. Karthik M, a specialist in structural engineering, highlight the strong industry connections the program offers. For more details, visit the [Civil Alumni page](https://civil.psgitech.ac.in/)."
+
+  utter_ai_ds_alumni:
+    - text: "AI-DS alumni include Ms. Sneha R, who works on cutting-edge data analytics solutions, and Mr. Vikram S, a machine learning engineer recognized for his innovative contributions. For more details, visit the [AI-DS Alumni page](https://psgitech.ac.in/ai-ds)."
+
+
+
+

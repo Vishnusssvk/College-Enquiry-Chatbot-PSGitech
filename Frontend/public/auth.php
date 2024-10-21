@@ -1,4 +1,8 @@
 <?php
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 $servername = "localhost";
 $username = "root"; // Default XAMPP MySQL username
 $password = ""; // Default XAMPP MySQL password
@@ -17,8 +21,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     $email = $_POST['email'];
     $password = $_POST['password'];
 
+    // Debugging output
+    if (empty($email) || empty($password)) {
+        echo json_encode(['success' => false, 'message' => 'Email or password cannot be empty.']);
+        exit;
+    }
+
     // Prepare statement to prevent SQL injection
     $stmt = $conn->prepare("SELECT password FROM user_data WHERE username = ?");
+    if (!$stmt) {
+        echo json_encode(['success' => false, 'message' => 'SQL Error: ' . $conn->error]);
+        exit;
+    }
+    
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $stmt->store_result();
@@ -38,6 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
     }
 
     $stmt->close();
+    exit; // Stop further execution after login handling
 }
 
 // Handle signup request
